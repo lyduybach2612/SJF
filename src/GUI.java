@@ -145,7 +145,7 @@ public class GUI extends JFrame {
                 currentProcess.setWaitingTime();
                 processList.add(currentProcess);
             } else {
-                currentTime += Integer.parseInt(String.valueOf(currentTime)) + 1;
+                currentTime = Math.ceil(currentTime) + 1;
             }
         }
         return processList;
